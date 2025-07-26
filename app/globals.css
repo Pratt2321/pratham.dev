@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@300;400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+  }
+  
+  body {
+    @apply bg-white font-sans transition-colors duration-200;
+    color: #1e293b;
+  }
+  
+  .dark body {
+    @apply bg-primary-900;
+    color: #ffffff;
+  }
+  
+  /* Dark mode text color overrides */
+  .dark .text-primary-600 {
+    color: #cbd5e1;
+  }
+  
+  .dark .text-primary-700 {
+    color: #e2e8f0;
+  }
+  
+  .dark .text-primary-800 {
+    color: #f1f5f9;
+  }
+  
+  .dark .text-primary-900 {
+    color: #ffffff;
+  }
+  
+  /* Dark mode background overrides */
+  .dark .bg-primary-50 {
+    background-color: #1e293b;
+  }
+  
+  .dark .bg-primary-100 {
+    background-color: #334155;
+  }
+  
+  .dark .bg-primary-200 {
+    background-color: #475569;
+  }
+  
+  /* Dark mode border overrides */
+  .dark .border-primary-100 {
+    border-color: #334155;
+  }
+  
+  .dark .border-primary-200 {
+    border-color: #475569;
+  }
+  
+  .dark .border-primary-300 {
+    border-color: #64748b;
+  }
+  
+  /* Fix white backgrounds in dark mode */
+  .dark .bg-white {
+    background-color: #1e293b;
+  }
+  
+  /* Ensure proper contrast for all text elements */
+  .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+    color: #ffffff;
+  }
+  
+  .dark p {
+    color: #e2e8f0;
+  }
+  
+  /* Card background overrides for dark mode */
+  .dark .bg-blue-50 {
+    background-color: #1e3a8a;
+  }
+  
+  .dark .bg-green-50 {
+    background-color: #166534;
+  }
+  
+  .dark .bg-orange-50 {
+    background-color: #9a3412;
+  }
+  
+  .dark .bg-amber-50 {
+    background-color: #92400e;
+  }
+  
+  .dark .bg-purple-50 {
+    background-color: #581c87;
+  }
+  
+  .dark .bg-pink-50 {
+    background-color: #831843;
+  }
+  
+  /* Fix text colors in cards for dark mode */
+  .dark .bg-blue-50 .text-primary-900,
+  .dark .bg-green-50 .text-primary-900,
+  .dark .bg-orange-50 .text-primary-900,
+  .dark .bg-amber-50 .text-primary-900,
+  .dark .bg-purple-50 .text-primary-900,
+  .dark .bg-pink-50 .text-primary-900 {
+    color: #ffffff;
+  }
+  
+  .dark .bg-blue-50 .text-primary-700,
+  .dark .bg-green-50 .text-primary-700,
+  .dark .bg-orange-50 .text-primary-700,
+  .dark .bg-amber-50 .text-primary-700,
+  .dark .bg-purple-50 .text-primary-700,
+  .dark .bg-pink-50 .text-primary-700 {
+    color: #e2e8f0;
+  }
+  
+  /* Fix core skills section in dark mode */
+  .dark .bg-primary-50 .text-primary-900 {
+    color: #ffffff;
+  }
+  
+  .dark .bg-primary-100 .text-primary-900 {
+    color: #ffffff;
+  }
+  
+  .dark .bg-primary-200 .text-primary-600 {
+    color: #cbd5e1;
+  }
+  
+  /* Ensure core skills text is visible in light mode */
+  .bg-primary-50 .text-primary-900 {
+    color: #1e293b;
+  }
+  
+  .bg-primary-100 .text-primary-900 {
+    color: #1e293b;
+  }
+  
+  .bg-primary-200 .text-primary-600 {
+    color: #475569;
+  }
+  
+  * {
+    border-color: #e2e8f0;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+  
+  .container-max {
+    @apply max-w-7xl mx-auto;
+  }
+  
+  .gradient-text {
+    background: linear-gradient(to right, #475569, #1e293b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .dark .gradient-text {
+    background: linear-gradient(to right, #ffffff, #e2e8f0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .glass-effect {
+    backdrop-filter: blur(12px);
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .dark .glass-effect {
+    backdrop-filter: blur(12px);
+    background-color: rgba(15, 23, 42, 0.9);
+    border: 1px solid rgba(51, 65, 85, 0.2);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .bg-radial-gradient {
+    background: radial-gradient(circle at center, var(--tw-gradient-stops));
+  }
+} 
