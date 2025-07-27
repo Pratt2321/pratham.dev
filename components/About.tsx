@@ -49,23 +49,15 @@ export default function About() {
             
             <div className="space-y-4 text-primary-700 dark:text-primary-300 leading-relaxed">
               <p>
-                I'm a data scientist obsessed with uncovering meaningful patterns, building 
-                intelligent systems, and making complex ideas feel intuitive. Whether I’m 
-                engineering machine learning pipelines, visualizing stories, 
-                or leading a campus AI club, I stay rooted in one mission: turning information 
-                into impact.
+                I'm a senior data science student at Michigan State University (MSU) obsessed with uncovering meaningful patterns, building intelligent systems, and making complex ideas easy to get. Whether I'm building machine learning models, visualizing stories, or leading the <a href="https://www.msuaiclub.com/" target="_blank" rel="noopener noreferrer" className="text-primary-600 dark:text-primary-400 hover:text-primary-800 dark:hover:text-primary-200 underline font-medium">MSU AI Club</a>, I'm all about using data to solve real problems.
               </p>
               
               <p>
-              With hands-on experience across research, aerospace, and analytics, I thrive at 
-              the intersection of technical depth and real-world outcomes. My work ranges from 
-              validating forecasting models in the industry to prototyping narrative visualizations 
-              for academic conferences.
+              With hands-on experience across research and analytics, I thrive where deep tech meets real-world impact. My work ranges from validating forecasting models in industry to prototyping narrative visualizations for academic conferences. I'm also active in <a href="https://www.instagram.com/msuspartahack/?hl=en" target="_blank" rel="noopener noreferrer" className="text-primary-600 dark:text-primary-400 hover:text-primary-800 dark:hover:text-primary-200 underline font-medium">SpartaHack</a>, MSU's premier hackathon crew, helping students innovate and build.
               </p>
               
               <p>
-              When I’m not building, I’m either diving into internet mysteries, organizing hackathons, 
-              or getting hyper-competitive in Spikeball.
+              When I'm not building, I'm diving into internet mysteries or getting hyper-competitive in Spikeball.
               </p>
             </div>
           </motion.div>
@@ -79,7 +71,6 @@ export default function About() {
           >
                          {/* Skills */}
              <div>
-               <h4 className="text-xl font-semibold mb-6 text-primary-900 dark:text-primary-100">Core Skills</h4>
                <div className="space-y-6">
                  {/* Data Science & ML */}
                  <div>

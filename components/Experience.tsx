@@ -12,11 +12,11 @@ const experiences = [
     company: 'GE Aerospace',
     location: 'Cincinnati, OH',
     period: 'May 2025 - August 2025',
-    description: 'Contributed to ML projects at a global leader in jet engine manufacturing. Developed pipleines to enhance internal document search.',
+    description: 'Contributed to ML projects at a global leader in jet engine manufacturing. Automated pipelines to enhance internal document search.',
     technologies: ['Python', 'SQL', 'RAG', 'AWS'],
     achievements: [
       'Improved forecasting accuracy by 10%',
-      'Built a RAG pipeline for a 1000+ page document'
+      'Engineered a RAG pipeline for a 1000+ page document'
     ]
   },
   {
@@ -24,10 +24,10 @@ const experiences = [
     company: 'TechSmith',
     location: 'East Lansing, MI',
     period: 'January 2025 - May 2025',
-    description: 'Developed churn prediction models using subscription data for a leading software platform. Built dashboards to support visualizations.',
+    description: 'Developed churn prediction models using subscription data for a leading software platform. Designed dashboards to support visualizations.',
     technologies: ['Scikit-learn', 'Streamlit', 'AutoML'],
     achievements: [
-      'Deployed a churn prediction model for 3000+ customers',
+      'Implemented a churn prediction model for 3000+ customers',
       'Deployed a Streamlit dashboard to generate heatmaps'
     ]
   },
@@ -39,8 +39,8 @@ const experiences = [
     description: 'Joined a multidisciplinary research group specializing in computational imaging, neuroscience, and ML. Applied deep learning models to EEG data from meditation studies.',
     technologies: ['Deep Learning', 'PyTorch'],
     achievements: [
-      '2 abstracts published in top-tier conferences',
-      'Developed group website; eliminated bot traffic'
+      'Submitted 2 abstracts to top-tier conferences',
+      'Created group website; eliminated bot traffic'
     ]
   }
 ]

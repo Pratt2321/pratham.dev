@@ -54,7 +54,11 @@ export default function Navbar() {
           {/* Logo */}
           <motion.div
             whileHover={{ scale: 1.05 }}
-            className="flex items-center space-x-2"
+            className="flex items-center space-x-2 cursor-pointer"
+            onClick={() => {
+              document.getElementById('hero')?.scrollIntoView({ behavior: 'smooth' })
+              setIsOpen(false)
+            }}
           >
             <img 
               src="/favicon.png" 

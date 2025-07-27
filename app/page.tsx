@@ -44,7 +44,7 @@ export default function Home() {
         <AnimatedBackground />
         
         {/* Dark Mode Toggle */}
-        <div className="fixed top-6 right-6 z-50">
+        <div className="fixed top-20 right-4 z-50 md:top-6 md:right-6">
           <DarkModeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
         </div>
 

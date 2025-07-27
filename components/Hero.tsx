@@ -37,7 +37,17 @@ export default function Hero() {
           transition={{ delay: 0.4 }}
           className="text-5xl md:text-7xl font-display font-bold mb-6"
         >
-          <span className="gradient-text">Pratham</span>
+          <span className="gradient-text">
+            {'Pratham'.split('').map((letter, index) => (
+              <span
+                key={index}
+                className="floating-letter"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                {letter}
+              </span>
+            ))}
+          </span>
         </motion.h1>
 
         {/* Title */}
@@ -47,7 +57,7 @@ export default function Hero() {
           transition={{ delay: 0.6 }}
           className="text-2xl md:text-3xl text-primary-700 mb-8 font-medium"
         >
-          Data Scientist & ML Engineer
+          Data Science @ Michigan State University
         </motion.h2>
 
         {/* Description */}
@@ -57,8 +67,7 @@ export default function Hero() {
           transition={{ delay: 0.8 }}
           className="text-lg text-primary-600 mb-12 max-w-2xl mx-auto leading-relaxed"
         >
-          I transform complex data into actionable insights, building intelligent systems 
-          that drive business decisions and create meaningful impact.
+          Continuously tuning my hyperparameters and dodging overfitting, on and off the screen.
         </motion.p>
 
         {/* CTA Buttons */}
