@@ -30,5 +30,5 @@ Welcome to my personal portfolio site — a curated space showcasing my work in 
 ## 📬 Contact Me
 
 - **LinkedIn**: [linkedin.com/in/prathampradhan](https://linkedin.com/in/prathampradhan)
-- **Email**: pratham[at]gmail[dot]com
+- **Email**: pradha11[at]msu[dot]edu
 - **GitHub**: [@pratham2321](https://github.com/pratham2321)
