@@ -6,8 +6,6 @@ Welcome to my personal portfolio site — a curated space showcasing my work in 
 
 📄 **Resume**: [resume.prathampradhan.dev](https://resume.prathampradhan.dev)
 
-🧠 **Research Poster**: [poster.prathampradhan.dev](https://poster.prathampradhan.dev)
-
 ---
 
 ## 🛠️ Tech Stack
