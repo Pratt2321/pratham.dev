@@ -68,7 +68,7 @@ const sideProjects = [
     title: 'Portfolio Website',
     description: 'This very website! Built with Next.js, TypeScript, and Tailwind CSS for a modern, responsive experience.',
     tech: ['Next.js', 'TypeScript', 'Tailwind CSS'],
-    link: 'https://github.com/pratham/pratham.dev'
+    link: 'https://github.com/pratt2321/prathampradhan.dev'
   },
   {
     title: 'Credit Card Insights',
