@@ -35,13 +35,13 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
-          className="text-5xl md:text-7xl font-display font-bold mb-6"
+          className="text-4xl sm:text-5xl md:text-7xl font-display font-bold mb-6"
         >
           <span className="gradient-text">
             {'Pratham'.split('').map((letter, index) => (
               <span
                 key={index}
-                className="floating-letter"
+                className="floating-letter inline-block"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {letter}

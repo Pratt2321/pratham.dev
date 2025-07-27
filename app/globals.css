@@ -166,6 +166,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    display: inline-block;
   }
   
   .dark .gradient-text {
@@ -173,6 +174,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    display: inline-block;
   }
   
   .glass-effect {
@@ -230,9 +232,23 @@
 .floating-letter {
   display: inline-block;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .floating-letter:hover {
   animation: float 0.6s ease-in-out;
   transform: translateY(-5px);
+}
+
+/* Mobile touch support for floating letters */
+@media (max-width: 768px) {
+  .floating-letter {
+    min-width: 1ch;
+    text-align: center;
+  }
+  
+  .floating-letter:hover {
+    animation: float 0.4s ease-in-out;
+    transform: translateY(-3px);
+  }
 } 
