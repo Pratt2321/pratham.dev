@@ -79,7 +79,7 @@ export default function Hero() {
           </motion.button>
           
           <motion.a
-            href="/Pratham_Pradhan_resume.pdf"
+            href="https://resume.prathampradhan.dev"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
@@ -153,7 +153,7 @@ export default function Hero() {
           </motion.a>
           
           <motion.a
-            href="https://beli.com/prathampradhan"
+            href="https://beliapp.com/app/prathampradhan"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.1, y: -2 }}
