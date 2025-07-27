@@ -27,7 +27,7 @@ const interests = [
   },
   {
     title: 'Spikeball',
-    description: 'Competitive spikeball matches with friends, improving hand-eye coordination and having a blast outdoors.',
+    description: 'Playing competitive spikeball matches with friends, improving hand-eye coordination and having a blast outdoors.',
     icon: Heart,
     color: 'from-green-500 to-green-600',
     bgColor: 'bg-green-50 dark:bg-green-900/20',
@@ -36,7 +36,7 @@ const interests = [
   },
   {
     title: 'Food',
-    description: 'Exploring diverse cuisines, trying new restaurants, and appreciating the art of cooking and dining.',
+    description: 'Tasting diverse cuisines, trying new restaurants, and appreciating the art of cooking and dining.',
     icon: Utensils,
     color: 'from-orange-500 to-orange-600',
     bgColor: 'bg-orange-50 dark:bg-orange-900/20',
@@ -45,7 +45,7 @@ const interests = [
   },
   {
     title: 'Mental Math',
-    description: 'Ranked top 1000 globally in Matiks. Sharpening cognitive skills through rapid mental calculations.',
+    description: 'Ranking top 1000 globally in Matiks. Sharpening cognitive skills through rapid mental calculations.',
     icon: Brain,
     color: 'from-purple-500 to-purple-600',
     bgColor: 'bg-purple-50 dark:bg-purple-900/20',
@@ -80,7 +80,7 @@ const sideProjects = [
     title: 'EEG Research Poster',
     description: 'Research poster on EEG signal processing and analysis. Exploring brain-computer interfaces and neural data interpretation.',
     tech: ['Python', 'Signal Processing', 'Neuroscience'],
-    link: '/EEG_Poster.pdf' // Link to your poster PDF
+    link: '/eeg-poster' // Link to embedded poster viewer
   }
 ]
 

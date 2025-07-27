@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   description: 'Personal website of Pratham, a data scientist passionate about machine learning, analytics, and building data-driven solutions.',
   keywords: ['data scientist', 'machine learning', 'analytics', 'python', 'sql'],
   authors: [{ name: 'Pratham' }],
+  icons: {
+    icon: '/favicon.png',
+  },
   openGraph: {
     title: 'Pratham - Data Scientist',
     description: 'Personal website of Pratham, a data scientist passionate about machine learning, analytics, and building data-driven solutions.',
