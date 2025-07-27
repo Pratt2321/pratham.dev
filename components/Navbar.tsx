@@ -54,9 +54,16 @@ export default function Navbar() {
           {/* Logo */}
           <motion.div
             whileHover={{ scale: 1.05 }}
-            className="text-xl font-display font-semibold text-primary-900 dark:text-white font-bold"
+            className="flex items-center space-x-2"
           >
-            Pratham
+            <img 
+              src="/favicon.png" 
+              alt="Pratham Logo" 
+              className="w-8 h-8 rounded-lg"
+            />
+            <span className="text-xl font-display font-semibold text-primary-900 dark:text-white font-bold">
+              Pratham
+            </span>
           </motion.div>
 
           {/* Desktop Navigation */}
