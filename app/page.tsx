@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
@@ -9,44 +9,16 @@ import Experience from '@/components/Experience'
 import Interests from '@/components/Interests'
 import Footer from '@/components/Footer'
 import AnimatedBackground from '@/components/AnimatedBackground'
-import DarkModeToggle from '@/components/DarkModeToggle'
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false)
   const { scrollY } = useScroll()
   const backgroundY = useTransform(scrollY, [0, 1000], [0, -200])
 
-  useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add('dark')
-    } else {
-      document.documentElement.classList.remove('dark')
-    }
-  }, [darkMode])
-
-  // Initialize dark mode from localStorage on mount
-  useEffect(() => {
-    const savedDarkMode = localStorage.getItem('darkMode')
-    if (savedDarkMode !== null) {
-      setDarkMode(JSON.parse(savedDarkMode))
-    }
-  }, [])
-
-  // Save dark mode preference to localStorage
-  useEffect(() => {
-    localStorage.setItem('darkMode', JSON.stringify(darkMode))
-  }, [darkMode])
-
   return (
-    <div className={`min-h-screen ${darkMode ? 'dark' : ''}`}>
+    <div className="min-h-screen">
       <div className="relative overflow-hidden">
         {/* Animated Background */}
         <AnimatedBackground />
-        
-        {/* Dark Mode Toggle */}
-        <div className="fixed top-20 right-4 z-50 md:top-6 md:right-6">
-          <DarkModeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
-        </div>
 
         {/* Sticky Navbar */}
         <Navbar />

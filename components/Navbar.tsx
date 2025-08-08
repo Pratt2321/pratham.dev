@@ -60,12 +60,7 @@ export default function Navbar() {
               setIsOpen(false)
             }}
           >
-            <img 
-              src="/favicon.png" 
-              alt="Pratham Logo" 
-              className="w-8 h-8 rounded-lg"
-            />
-            <span className="text-xl font-display font-semibold text-primary-900 dark:text-white font-bold">
+            <span className="text-xl font-display font-semibold text-primary-900 font-bold">
               Pratham
             </span>
           </motion.div>
@@ -80,8 +75,8 @@ export default function Navbar() {
                 onClick={() => scrollToSection(item.href)}
                 className={`relative px-3 py-2 text-sm font-medium transition-colors duration-200 ${
                   activeSection === item.href.slice(1)
-                    ? 'text-primary-900 dark:text-white font-semibold'
-                    : 'text-primary-700 hover:text-primary-900 dark:text-primary-300 dark:hover:text-white'
+                    ? 'text-primary-900 font-semibold'
+                    : 'text-primary-700 hover:text-primary-900'
                 }`}
               >
                 {item.name}
